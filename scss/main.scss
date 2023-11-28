@@ -7,12 +7,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: gray;
+    background-color: rgb(153, 153, 153);
 }
 
 a:hover {
-    color: white;
-    font-size: 20px;
+    color: rgba(114, 15, 15, 0.945);
+    font-size: 30px;
 }
 
   // PAGE INICIO
@@ -34,8 +34,8 @@ header {
     align-items: center;
     max-width: 100%;
     height: auto;
-    border-radius: 800px;
-    padding-top: 15px;
+    border-radius: 400px 800px 800px 300px;
+    padding: 5px 15px 0px 15px;
     }
 }
 
@@ -44,16 +44,16 @@ header {
     align-items: center;
     max-width: 100%;
     height: auto;
-    border-radius: 800px;
+    // border-radius: 800px;
     }
 }
 nav {
     // grid-area: nav;
     // color: #fff;
-    background-color: rgb(146, 83, 0);
+    background-color: rgba(255, 145, 0, 0.568);
     text-align: center;
     padding: 10px;
-    margin: 10px 0;
+    // margin: 10px 0;
 
     ul {
     list-style: none;
@@ -94,6 +94,8 @@ main {
         position: relative;
         border-radius: 15%;
         overflow: hidden;
+        padding-bottom: 50px;
+        display: block;
 
         img {
         width: 100%;
@@ -101,7 +103,7 @@ main {
         padding: 10px;
         }
 
-        &.NUEVO {
+        .NUEVO {
         position: absolute;
         top: 0;
         right: 0;
@@ -109,6 +111,20 @@ main {
         padding: 15px;
         font-size: 20px;
         }
+        .DESCRIPCION{
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        font-size: 20px;
+        }
+        &:hover {
+        p {
+        opacity: 1;
+        }
+    }
     }
     }
 }
@@ -117,8 +133,8 @@ main {
 
   // PAGE QUIENES SOMOS
 .quienessomos {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 40%;
+    margin-right: 40%;
     text-align: center;
     align-items: center;
 }
