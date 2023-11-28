@@ -100,7 +100,7 @@ main .productos .p-imagen .DESCRIPCION {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease;
-  font-size: 20px;
+  font-size: 30px;
 }
 main .productos .p-imagen:hover p {
   opacity: 1;
@@ -118,24 +118,6 @@ main .productos .p-imagen:hover p {
   margin-right: 30%;
   text-align: center;
   align-items: center;
-}
-
-.blogs-tips {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 60px;
-}
-.blogs-tips .imagenblogtip {
-  width: 200px;
-  height: 200px;
-  position: relative;
-}
-.blogs-tips .imagenblogtip png {
-  width: 100%;
-  height: 450px;
-  padding: 10px;
 }
 
 body {
